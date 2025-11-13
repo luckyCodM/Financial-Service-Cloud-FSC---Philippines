@@ -1308,6 +1308,52 @@ section,
   color: var(--accent-color);
 }
 
+.about__v4 .subtitle {
+  background-color: rgba(var(--bs-secondary-rgb), 0.2);
+  color: var(--bs-primary);
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-bottom: 10px;
+}
+
+.about__v4 .features li .icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: var(--accent-color);
+  color: var(--bs-white);
+}
+.about__v4 .mission-statement {
+  background-color: var(--accent-color);
+  position: relative;
+  bottom: -20px;
+  width: 100%;
+}
+.about__v4 .mission-statement h3 {
+  font-size: 10px;
+  color: var(--bs-white);
+}
+.about__v4 .mission-statement p {
+  color: var(--bs-white);
+}
+.about__v4 .mission-icon {
+  width: 50px;
+  height: 50px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50px;
+          flex: 0 0 50px;
+  line-height: 50px;
+  display: inline-block;
+  background-color: #fff3cd;
+}
+.about__v4 .mission-icon i {
+  color: var(--bs-yellow);
+}
+
 .howitworks__v1 .subtitle {
   background-color: rgba(var(--bs-secondary-rgb), 0.2);
   color: var(--bs-primary);
