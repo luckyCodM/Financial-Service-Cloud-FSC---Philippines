@@ -226,7 +226,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 55px;
   margin-right: 8px;
 }
 
@@ -565,8 +565,8 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  max-height: 55px;
+  margin-right: 8px;
 }
 
 .footer .footer-about .logo span {
