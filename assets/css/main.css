@@ -276,6 +276,23 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+
+
+
+
+
+
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+img:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
@@ -995,6 +1012,62 @@ section,
     font-size: 18px;
   }
 }
+ .hero-form-box {
+  background: #6a6a6a;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+
+/* RESPONSIVE MEDIA QUERIES */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-form-box {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .hero-form-box {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.6rem;
+  }
+  .btn-get-started {
+    padding: 10px 18px;
+  }
+  .hero-form-box {
+    padding: 20px;
+  }
+}
+
+
+
+
+
+
+.text-purple {
+  color: #6a1b9a;
+}
+
+img:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1568,8 +1641,8 @@ section,
   display: inline-block;
   padding: 5px 12px;
   border-radius: 7px;
-  font-weight: 500;
-  font-size: 0.75rem;
+  /* font-weight: 500; */
+  /* font-size: 0.75rem; */
   margin-bottom: 10px;
 }
 
@@ -1583,7 +1656,7 @@ section,
   display: inline-block;
   color: var(--surface-color);
   background-color: var(--accent-color);
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 .howitworks__v1 .arch-line {
   position: absolute;
