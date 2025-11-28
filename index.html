@@ -69,7 +69,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#contact">Get a Free Consultation</a>
+      <a class="cta-btn" href="index.html#contact">Book Free Consultation</a>
 
     </div>
   </header>
@@ -124,20 +124,25 @@
               data-aos-delay="200">
 
               <h3 class="text-white mb-2" data-aos="fade-up" data-aos-delay="100">Let’s Build Something Great</h3>
-              <p class="text-sm mb-4" data-aos="fade-up" data-aos-delay="200">
+              <!-- <p class="text-sm mb-4" data-aos="fade-up" data-aos-delay="200">
                 Looking for the right Salesforce or CRM solution? Send us your
                 query and we’ll guide you through.
-              </p>
+              </p> -->
 
-              <form>
+              <form class="space-y-4" id="webToLeadForm" target="hidden_iframe"
+                action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
+                method="POST">
+                <input type="hidden" name="oid" value="00DH40000008jfE">
+                <!-- <input type="hidden" name="retURL" value="thankYouPopup"> -->
 
                 <!-- Name Row -->
                 <div class="row mb-3">
                   <div class="col-md-6 mb-3 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control p-3" placeholder="Your Name">
+                    <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                      class="form-control p-3">
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <input type="text" class="form-control p-3" placeholder="Last Name">
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="form-control p-3">
                   </div>
                 </div>
 
@@ -147,23 +152,29 @@
                     <input type="email" class="form-control p-3" placeholder="Email">
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <input type="text" class="form-control p-3" placeholder="Phone">
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control p-3">
                   </div>
                 </div>
 
                 <!-- Company -->
                 <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
-                  <input type="text" class="form-control p-3" placeholder="Company">
+                  <input type="text" id="company" name="company" placeholder="Company" class="form-control p-3">
+                </div>
+
+                <!-- Country -->
+                <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
+                  <input type="text" id="city" name="city" placeholder="Country" class="form-control p-3">
                 </div>
 
                 <!-- Message -->
                 <div class="mb-4" data-aos="fade-up" data-aos-delay="500">
-                  <textarea class="form-control p-3" rows="4" placeholder="Message"></textarea>
+                  <textarea class="form-control p-3" id="message" name="description" rows="3"
+                    placeholder="How can we help you?"></textarea>
                 </div>
 
                 <!-- Submit -->
-                <div class="d-flex justify-content-end" data-aos="fade-up" data-aos-delay="900">
-                  <button class="btn px-4 py-3"
+                <div class="d-flex justify-content-end" data-aos="fade-up" data-aos-delay="700">
+                  <button type="submit" class="btn px-4 py-3"
                     style="background:#ba543a; color:#fff; font-weight:600; border-radius:10px;">
                     Submit Now ↗
                   </button>
@@ -180,7 +191,15 @@
 
     <!-- Business Floating Badge -->
     <section class="business-badge" data-aos="fade-up" data-aos-delay="400">
-      <img src="assets/img/Ridge-Partner.png" alt="Consulting Services" title="CodM Software Consulting Services">
+      <img src="assets/img/Ridge-Partner.png" alt="Consulting Services">
+    </section>
+
+    <section class="floating-buttons">
+
+      <!-- WhatsApp / Business Contact Icon -->
+      <a href="https://wa.me/9871717425" target="_blank" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/whatsup.svg" alt="Business Contact" class="contact-icon">
+      </a>
     </section>
 
     <!-- /Hero Section -->
@@ -228,7 +247,7 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section><!-- About Section -->
 
     <!-- Stats Section -->
     <section id="stats" class="stats section light-background">
@@ -933,8 +952,8 @@
     <section id="navigator-badges" class="section bg-light">
 
       <div class="container section-title" data-aos="fade-up">
-        <h2>Salesforce Badges</h2>
-        <p>Our Salesforce Expertise</p>
+        <h2>Our Certifications</h2>
+        <p>Verified Professional Expertise</p>
       </div>
 
       <div class="container">
@@ -942,13 +961,13 @@
 
           <!-- LEFT SIDEBAR -->
           <div class="col-lg-3 col-md-4 mb-4 border-end">
-            <h5 class="fw-bold mb-4 custom-heading">Our Salesforce Accreditation</h5>
+            <h5 class="fw-bold mb-4 custom-heading">Salesforce Accreditation</h5>
 
             <ul id="badgeTabs" class="list-group list-group-flush badge-sidebar">
-              <li class="list-group-item active-badge" data-target="cat-agency">Architect Solutions</li>
-              <li class="list-group-item" data-target="cat-c360">OmniStudio Consultant</li>
-              <li class="list-group-item" data-target="cat-data">Platform App Builder</li>
-              <li class="list-group-item" data-target="cat-einstein">Buisness Analyst</li>
+              <li class="list-group-item active-badge" data-target="cat-agency">Architect Certifications</li>
+              <li class="list-group-item" data-target="cat-c360">OmniStudio Expertise</li>
+              <li class="list-group-item" data-target="cat-data">Platform Expertise</li>
+              <li class="list-group-item" data-target="cat-einstein">BA & Admin Expertise</li>
               <li class="list-group-item" data-target="cat-commerce">Financial Services Cloud</li>
               <li class="list-group-item" data-target="cat-Agentic">Agentic AI</li>
             </ul>
@@ -965,7 +984,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Application-Architect.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Application Architect</h5>
-                    <p class="small text-muted">Agency</p>
+                    <p class="small text-muted">Expert in building scalable Salesforce applications.</p>
                   </div>
                 </div>
 
@@ -973,7 +992,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/B2C-Solution-Architect.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">B2C Solution Architect</h5>
-                    <p class="small text-muted">Agency</p>
+                    <p class="small text-muted">Specialist in end-to-end B2C Salesforce solutions.</p>
                   </div>
                 </div>
 
@@ -981,7 +1000,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Data Architect.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Data Architect</h5>
-                    <p class="small text-muted">Agency</p>
+                    <p class="small text-muted">Skilled in designing secure, enterprise-grade data models.</p>
                   </div>
                 </div>
 
@@ -995,7 +1014,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/OmniStudio-Consultant.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">OmniStudio Consultant</h5>
-                    <p class="small text-muted">Customer 360</p>
+                    <p class="small text-muted">Designing guided and streamlined digital experiences.</p>
                   </div>
                 </div>
 
@@ -1003,7 +1022,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/OmniStudio-Developer.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">OmniStudio Developer</h5>
-                    <p class="small text-muted">Customer 360</p>
+                    <p class="small text-muted">Building scalable OmniStudio components and solutions.</p>
                   </div>
                 </div>
               </div>
@@ -1016,7 +1035,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Platform-App-Builder.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Platform App Builder</h5>
-                    <p class="small text-muted">Data Cloud</p>
+                    <p class="small text-muted">Builds custom Salesforce apps and workflows.</p>
                   </div>
                 </div>
 
@@ -1025,7 +1044,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Platform-Developer-II.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Platform Developer II</h5>
-                    <p class="small text-muted">Data Cloud</p>
+                    <p class="small text-muted">Expert in advanced Apex and Salesforce development.</p>
                   </div>
                 </div>
 
@@ -1033,7 +1052,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Platform-Developer-I.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Platform Developer I</h5>
-                    <p class="small text-muted">Customer 360</p>
+                    <p class="small text-muted">Skilled in core Apex and Lightning development.</p>
                   </div>
                 </div>
 
@@ -1048,21 +1067,21 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/buisness-analyst.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Business Analyst</h5>
-                    <p class="small text-muted">AI / ML</p>
+                    <p class="small text-muted">Skilled in translating business needs into Salesforce solutions.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Advanced-Administrator.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Advanced Administrator</h5>
-                    <p class="small text-muted">AI / ML</p>
+                    <p class="small text-muted">Expert in advanced Salesforce configuration and automation.</p>
                   </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Administrator.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Administrator</h5>
-                    <p class="small text-muted">AI / ML</p>
+                    <p class="small text-muted">Proficient in core Salesforce setup and user management.</p>
                   </div>
                 </div>
               </div>
@@ -1075,7 +1094,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Financial-Services-Cloud.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Financial Services Cloud</h5>
-                    <p class="small text-muted">Commerce Cloud</p>
+                    <p class="small text-muted">Expert in implementing Salesforce FSC solutions.</p>
                   </div>
                 </div>
               </div>
@@ -1088,7 +1107,7 @@
                   <div class="badge-card text-center shadow-sm p-3">
                     <img src="assets/img/portfolio/Agentforce-Specialist.png" class="img-fluid mb-3">
                     <h5 class="fw-bold">Agentforce Specialist</h5>
-                    <p class="small text-muted">Commerce Cloud</p>
+                    <p class="small text-muted">AI-powered support and intelligent service automation.</p>
                   </div>
                 </div>
               </div>
@@ -1286,24 +1305,41 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="500">
+            <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
+              method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <input type="hidden" name="oid" value="00DH40000008jfE">
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" id="first_name" name="first_name" placeholder="First Name" class="form-control"
+                    required="">
                 </div>
 
                 <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="form-control"
+                    required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control"
+                    required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  <input type="text" id="company" name="company" placeholder="Company" class="form-control" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                  <input type="text" id="city" name="city" placeholder="Country" class="form-control" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" id="message" name="description" rows="2"
+                    placeholder="How can we help you?" required=""></textarea>
                 </div>
 
                 <div class="col-md-12 text-center">
@@ -1330,8 +1366,6 @@
         <div class="row mb-4">
           <div class="col-md-6 col-lg-7 mx-auto text-center">
             <h2 class="h2 fw-bold mb-3" data-aos="fade-up" data-aos-delay="0">Frequently Asked Questions</h2>
-            <!-- <p data-aos="fade-up" data-aos-delay="100">Utilize our tools to develop your concepts and bring your vision
-              to life. Once complete, effortlessly share your creations.</p> -->
           </div>
         </div>
         <div class="row">
@@ -1525,6 +1559,24 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script>
+    const scrollTopBtn = document.getElementById('scroll-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('show');
+      } else {
+        scrollTopBtn.classList.remove('show');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>

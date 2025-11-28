@@ -765,12 +765,12 @@ img:hover {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: 15px;
+  right: 25px;
+  bottom: 25px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 4px;
   transition: all 0.4s;
 }
@@ -1959,8 +1959,35 @@ img:hover {
   color:0;}
 
 .business-badge img {
-  width: 80px;
+  width: 70px;
   border-radius: 15px;
-  border: 2px solid #b95336;
+  border: 2px solid #ffffff;
   box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+/* Floating Buttons Wrapper */
+.floating-buttons {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: transparent;
+}
+
+/* WhatsApp / Business Icon */
+.contact-icon {
+  width: 60px;
+  border-radius: 10px;
+  /* border: 2px solid #b95336; */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+  
+}
+
+.contact-icon:hover {
+  transform: scale(1.00);
 }
