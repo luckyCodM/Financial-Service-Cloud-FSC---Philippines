@@ -613,6 +613,29 @@ img:hover {
   transition: 0.3s;
 }
 
+
+/* Social Icons Wrapper */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;                 
+}
+
+/* Social Icon Style */
+.social-links a i {
+  font-size: 1.4rem;         
+  color: white;              
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.social-links a:hover i {
+  color: #ff6b3d;            
+  transform: translateY(-3px);
+}
+
+
+
 .footer .social-links a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
@@ -1989,3 +2012,7 @@ img:hover {
 .contact-icon:hover {
   transform: scale(1.00);
 }
+
+
+
+

@@ -52,24 +52,24 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="codmsoftware.com/about-us">About</a></li>
-          <li><a href="service-details.html">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="service-details.html">Services</a></li> -->
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="service-details.html">Dropdown 1</a></li>
-              <li><a href="service-details.html">Dropdown 2</a></li>
+              <li><a href="service-details.html">Financial Services Cloud</a></li>
+              <!-- <li><a href="service-details.html">Dropdown 2</a></li>
               <li><a href="service-details.html">Dropdown 3</a></li>
-              <li><a href="service-details.html">Dropdown 4</a></li>
+              <li><a href="service-details.html">Dropdown 4</a></li> -->
             </ul>
-          </li> -->
+          </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#accreditation">Book Free Consultation</a>
+      <a class="cta-btn" href="index.html#contact">Book Free Consultation</a>
 
     </div>
   </header>
@@ -93,7 +93,17 @@
 
             <div class="d-flex mt-4 justify-content-center justify-content-lg-start" data-aos="fade-up"
               data-aos-delay="300">
-              <a href="#industry_points" class="btn-get-started me-3">Get Started</a>
+              <!-- <a href="#industry_points" class="btn-get-started me-3">Get Started</a> -->
+              <div class="social-links">
+                <a href="https://x.com/CodMSoftware" target="_blank" rel="noopener noreferrer"><i
+                    class="bi bi-twitter-x"></i></a>
+                <a href="https://www.linkedin.com/company/codmsoftware/" target="_blank" rel="noopener noreferrer"><i
+                    class="bi bi-linkedin"></i></a>
+                <a href="https://www.youtube.com/@CodMSoftware" target="_blank" rel="noopener noreferrer"><i
+                    class="bi bi-youtube"></i></a>
+                <a href="https://in.pinterest.com/codmsoftware" target="_blank" rel="noopener noreferrer"><i
+                    class="bi bi-pinterest"></i></a>
+              </div>
               <a href="https://www.youtube.com/watch?v=sSYxWnBm6Vk"
                 class="glightbox btn-watch-video d-flex align-items-center">
                 <i class="bi bi-play-circle"></i>
@@ -104,20 +114,19 @@
 
           <!-- Right Side Form (Exact same as your screenshot) -->
           <div class="col-lg-5 offset-lg-1">
-            <div class="p-4 p-lg-5 rounded-4" style="background:#6a6a6a; margin-top: 30px;" data-aos="fade-up"
-              data-aos-delay="200">
+            <div class="p-4 p-lg-5 rounded-4" style="background:#6a6a6a; margin-top: 30px;">
 
               <h3 class="text-white mb-2" data-aos="fade-up" data-aos-delay="100">Let’s Build Something Great</h3>
-              <!-- <p class="text-sm mb-4" data-aos="fade-up" data-aos-delay="200">
+              <!-- <p class="text-white mb-2" data-aos="fade-up" data-aos-delay="200">
                 Looking for the right Salesforce or CRM solution? Send us your
                 query and we’ll guide you through.
               </p> -->
 
               <form class="space-y-4" id="webToLeadForm" target="hidden_iframe"
-                action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
-                method="POST">
-                <input type="hidden" name="oid" value="00DH40000008jfE">
-                <!-- <input type="hidden" name="retURL" value="thankYouPopup"> -->
+                action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                <input type="hidden" name="oid" value="00D5i000008yVNX">
+                <input type="hidden" name="retURL" value="codmsoftware.com">
+                <input type="hidden" name="lead_source" value="Web">
 
                 <!-- Name Row -->
                 <div class="row mb-3">
@@ -136,18 +145,13 @@
                     <input type="email" class="form-control p-3" placeholder="Email">
                   </div>
                   <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control p-3">
+                    <input type="text" id="phone" name="phone" placeholder="Phone " class="form-control p-3">
                   </div>
                 </div>
 
                 <!-- Company -->
                 <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
                   <input type="text" id="company" name="company" placeholder="Company" class="form-control p-3">
-                </div>
-
-                <!-- Country -->
-                <div class="mb-3" data-aos="fade-up" data-aos-delay="500">
-                  <input type="text" id="city" name="city" placeholder="Country" class="form-control p-3">
                 </div>
 
                 <!-- Message -->
@@ -1254,6 +1258,53 @@
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
+              class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <input type="hidden" name="oid" value="00D5i000008yVNX" />
+              <input type="hidden" name="retURL" value="codmsoftware.com" />
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" id="first_name" name="first_name" placeholder="First Name" class="form-control"
+                    required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="form-control"
+                    required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control"
+                    required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" id="email" name="email" placeholder="Email" class="form-control" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" id="company" name="subject" placeholder="Company" class="form-control" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" id="message" name="description" rows="2"
+                    placeholder="How can we help you?" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div>
           <div class="col-lg-6 ">
             <div class="row gy-4">
 
@@ -1288,55 +1339,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DH40000008jfE"
-              method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <input type="hidden" name="oid" value="00DH40000008jfE">
-              <div class="row gy-4">
 
-                <div class="col-md-6">
-                  <input type="text" id="first_name" name="first_name" placeholder="First Name" class="form-control"
-                    required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="text" id="last_name" name="last_name" placeholder="Last Name" class="form-control"
-                    required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="text" id="phone" name="phone" placeholder="Phone Number" class="form-control"
-                    required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" id="email" name="email" placeholder="Email" class="form-control" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" id="company" name="company" placeholder="Company" class="form-control" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" id="city" name="city" placeholder="Country" class="form-control" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" id="message" name="description" rows="2"
-                    placeholder="How can we help you?" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div>
           <!-- End Contact Form -->
 
         </div>
@@ -1472,10 +1475,14 @@
             <p><strong>Email:</strong> <span>sales@codmsoftware.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-youtube"></i></a>
-            <a href=""><i class="bi bi-pinterest"></i></a>
+            <a href="https://x.com/CodMSoftware" target="_blank" rel="noopener noreferrer"><i
+                class="bi bi-twitter-x"></i></a>
+            <a href="https://www.linkedin.com/company/codmsoftware/" target="_blank" rel="noopener noreferrer"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@CodMSoftware" target="_blank" rel="noopener noreferrer"><i
+                class="bi bi-youtube"></i></a>
+            <a href="https://in.pinterest.com/codmsoftware" target="_blank" rel="noopener noreferrer"><i
+                class="bi bi-pinterest"></i></a>
           </div>
 
         </div>
