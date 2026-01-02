@@ -756,9 +756,9 @@ img:hover {
   overflow: hidden;
   background: var(--background-color);
   transition: all 0.6s ease-out;
-} */
+}
 
-/* #preloader:before {
+#preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -769,7 +769,7 @@ img:hover {
   width: 60px;
   height: 60px;
   animation: animate-preloader 1.5s linear infinite;
-} */
+}
 
 @keyframes animate-preloader {
   0% {
@@ -779,7 +779,7 @@ img:hover {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -2059,7 +2059,28 @@ section strong {
         font-size: 0.95rem;
     }
 }
+#hero,
+#about,
+#contact {
+  scroll-margin-top: 90px;
+}
 
+/* .main {
+  padding-top: 90px;
+} */
 
+/* Force dark header ONLY on About page */
+body.about-page #header {
+  background: rgba(33, 37, 41, 0.95) !important;
+}
 
+body.about-page .navmenu a,
+body.about-page .navmenu a:focus,
+body.about-page .navmenu a:hover {
+  color: #fff !important;
+}
 
+body.about-page .cta-btn {
+  border-color: #fff;
+  color: #fff;
+}
