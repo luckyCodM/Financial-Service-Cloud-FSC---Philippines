@@ -201,3 +201,26 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+/**
+   * Story Section Toggle
+   */
+  const buttons = document.querySelectorAll(".story .btn-pill");
+  const panes = document.querySelectorAll(".story-pane");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Remove active from all buttons
+      buttons.forEach(b => b.classList.remove("active"));
+
+      // Hide all content
+      panes.forEach(p => p.classList.remove("active"));
+
+      // Activate clicked button
+      btn.classList.add("active");
+
+      // Show related content
+      document.getElementById(btn.dataset.target).classList.add("active");
+    });
+  });
