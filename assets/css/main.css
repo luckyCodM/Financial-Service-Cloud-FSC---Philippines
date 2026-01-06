@@ -1162,7 +1162,37 @@ img:hover {
     transform: translateY(0);
   }
 }
-s
+
+.timeline-btn {
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.timeline-btn:hover {
+  transform: scale(1.1);
+}
+
+.timeline-btn.active {
+  background: #000 !important;
+}
+
+.year {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.timeline-img {
+  max-width: 100%;
+  transition: opacity 0.4s ease;
+}
+.timeline-img.hidden {
+  opacity: 0;
+}
+.timeline-img.visible {
+  opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Stats Section
@@ -1711,8 +1741,6 @@ s
   display: inline-block;
   padding: 5px 12px;
   border-radius: 7px;
-  /* font-weight: 500; */
-  /* font-size: 0.75rem; */
   margin-bottom: 10px;
 }
 
@@ -1726,7 +1754,6 @@ s
   display: inline-block;
   color: var(--surface-color);
   background-color: var(--accent-color);
-  /* font-size: 18px; */
 }
 .howitworks__v1 .arch-line {
   position: absolute;
@@ -2090,28 +2117,30 @@ section strong {
         font-size: 0.95rem;
     }
 }
-#hero,
+/* #hero,
 #about,
 #contact {
   scroll-margin-top: 90px;
-}
+} */
 
 /* .main {
   padding-top: 90px;
 } */
 
 /* Force dark header ONLY on About page */
-body.about-page #header {
+/* body.about-page #header {
   background: rgba(33, 37, 41, 0.95) !important;
-}
+} */
 
-body.about-page .navmenu a,
+/* body.about-page .navmenu a,
 body.about-page .navmenu a:focus,
 body.about-page .navmenu a:hover {
   color: #fff !important;
-}
+} */
 
-body.about-page .cta-btn {
+/* body.about-page .cta-btn {
   border-color: #fff;
   color: #fff;
-}
+} */
+
+
