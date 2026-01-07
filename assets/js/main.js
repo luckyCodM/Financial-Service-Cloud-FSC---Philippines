@@ -234,18 +234,18 @@
   2021: {
     title: "The Beginning",
     text: "CodM Software was founded by Anjali Kumari and began operations in 2021 with a vision to drive innovation and deliver tailored solutions that make an impact in the Salesforce ecosystem.",
-    image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
   },
   2022: {
     title: "Becoming a Salesforce Consultant",
     text: "With continuous dedication to our work and a commitment to learning, growth and expertise, CodM Software evolved into a Salesforce Consulting Partner within a year of starting its operations.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
   },
-  2023: {
-    title: "Expanding the Team",
-    text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
-  },
+  // 2023: {
+  //   title: "Expanding the Team",
+  //   text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
+  //   image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
+  // },
   2024: {
     title: "Expanding the Team",
     text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
@@ -260,22 +260,7 @@
     title: "The Beginning",
     text: "CodM Software was officially founded with a mission to deliver impactful digital solutions.",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-  },
-  // 2027: {
-  //   title: "Product Expansion",
-  //   text: "We launched multiple products and expanded our service offerings.",
-  //   image: "https://images.unsplash.com/photo-1552664730-d307ca884978"
-  // },
-  // 2028: {
-  //   title: "Strong Market Presence",
-  //   text: "CodM Software became a trusted name with long-term enterprise clients.",
-  //   image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
-  // },
-  // 2029: {
-  //   title: "Future Ready",
-  //   text: "We continue to innovate and scale globally with cutting-edge solutions.",
-  //   image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-  // }
+  }
 };
 
 // SELECT ELEMENTS
