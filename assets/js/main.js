@@ -256,11 +256,11 @@
     text: "In 2025, CodM Software achieved another milestone of becoming a Salesforce Ridge Partner and expanded its presence on the Salesforce AppExchange, marking a new chapter of innovation and credibility.",
     image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
   },
-  // 2026: {
-  //   title: "The Beginning",
-  //   text: "CodM Software was officially founded with a mission to deliver impactful digital solutions.",
-  //   image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-  // }
+  2026: {
+    title: "Looking Ahead",
+    text: "As we look to the future, CodM Software remains committed to excellence, innovation, and delivering exceptional value to our clients worldwide, continuing our journey of growth and success in the Salesforce ecosystem.",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+  }
 };
 
 // SELECT ELEMENTS
