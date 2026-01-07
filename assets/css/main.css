@@ -900,7 +900,7 @@ section,
   position: relative;
 }
 
-.section-title h2 {
+.section-title p {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
@@ -910,9 +910,15 @@ section,
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   position: relative;
+  
+
+
+
+
+
 }
 
-.section-title h2::after {
+.section-title p::after {
   content: "";
   width: 120px;
   height: 1px;
@@ -921,7 +927,7 @@ section,
   margin: 4px 10px;
 }
 
-.section-title p {
+.section-title h2 {
   color: var(--heading-color);
   margin: 0;
   font-size: 36px;
@@ -1900,68 +1906,6 @@ img:hover {
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
-}
-
-.portfolio-details .portfolio-info {
-  background-color: var(--surface-color);
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-/*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
 .service-details .services-list {
@@ -2089,13 +2033,12 @@ h1 {
 h2 {
     font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }
 
 p {
     font-size: 1rem;
     line-height: 1.7;
-    /* color: #333; */
     margin-bottom: 1rem;
 }
 
@@ -2117,30 +2060,5 @@ section strong {
         font-size: 0.95rem;
     }
 }
-/* #hero,
-#about,
-#contact {
-  scroll-margin-top: 90px;
-} */
-
-/* .main {
-  padding-top: 90px;
-} */
-
-/* Force dark header ONLY on About page */
-/* body.about-page #header {
-  background: rgba(33, 37, 41, 0.95) !important;
-} */
-
-/* body.about-page .navmenu a,
-body.about-page .navmenu a:focus,
-body.about-page .navmenu a:hover {
-  color: #fff !important;
-} */
-
-/* body.about-page .cta-btn {
-  border-color: #fff;
-  color: #fff;
-} */
 
 
