@@ -35,7 +35,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
+  <link rel="preload" href="/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/raleway.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -1434,7 +1436,7 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <!-- <script>
+  <script>
     const scrollTopBtn = document.getElementById('scroll-top');
 
     window.addEventListener('scroll', () => {
@@ -1451,10 +1453,10 @@
         behavior: "smooth"
       });
     });
-  </script> -->
+  </script>
 
   <!-- Main JS File -->
-  <script src="assets/js/layout.js"></script>
+  <script src="assets/js/layout.js" async></script>
 
 
 
