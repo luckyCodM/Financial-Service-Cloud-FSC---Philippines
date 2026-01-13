@@ -55,12 +55,12 @@
   /**
    * Preloader
    */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove();
-    });
-  }
+  // const preloader = document.querySelector('#preloader');
+  // if (preloader) {
+  //   window.addEventListener('load', () => {
+  //     preloader.remove();
+  //   });
+  // }
 
   /**
    * Scroll top button
@@ -241,11 +241,6 @@
     text: "With continuous dedication to our work and a commitment to learning, growth and expertise, CodM Software evolved into a Salesforce Consulting Partner within a year of starting its operations.",
     image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
   },
-  // 2023: {
-  //   title: "Expanding the Team",
-  //   text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
-  //   image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c"
-  // },
   2024: {
     title: "Expanding the Team",
     text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
@@ -291,3 +286,48 @@ button.forEach(btn => {
     }, 200);
   });
 });
+
+//  <!-- JAVASCRIPT FOR TAB NAVIGATION -->
+
+      const tabs = document.querySelectorAll("#badgeTabs .list-group-item");
+      const categories = document.querySelectorAll(".badge-category");
+
+      tabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+
+          // Remove active
+          tabs.forEach(t => t.classList.remove("active-badge"));
+
+          // Add active to clicked tab
+          this.classList.add("active-badge");
+
+          // Hide all categories
+          categories.forEach(cat => cat.classList.remove("active"));
+
+          // Show target category
+          const target = this.getAttribute("data-target");
+          document.getElementById(target).classList.add("active");
+        });
+      });
+
+//  <!-- END OF JAVASCRIPT FOR TAB NAVIGATION -->
+
+    const scrollTopBtn = document.getElementById('scroll-top');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add('show');
+      } else {
+        scrollTopBtn.classList.remove('show');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+
+//  <!-- END OF SCROLL TO TOP BUTTON JAVASCRIPT -->
+
