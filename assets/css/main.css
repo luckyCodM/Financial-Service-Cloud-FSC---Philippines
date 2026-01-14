@@ -2060,4 +2060,45 @@ section strong {
 }
 
 
+/* Circle container */
+.icon-circle {
+  width: 260px;
+  height: 260px;
+  margin: auto;
+  background: linear-gradient(135deg, #1d9dd8, #ba543a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image inside circle */
+.icon-img {
+  width: 100%;
+  height: auto;        /* Keep aspect ratio */
+  margin-top: 119px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .icon-circle {
+    width: 220px;
+    height: 220px;
+  }
+
+  .icon-img {
+    width: 75%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .icon-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .icon-img {
+    width: 80%;
+  }
+}
 
