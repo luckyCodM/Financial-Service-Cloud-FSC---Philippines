@@ -36,7 +36,14 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
 
   <!-- CRITICAL CSS (keep render-blocking) -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </noscript>
+
 
   <!-- NON-CRITICAL CSS (load asynchronously) -->
   <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
