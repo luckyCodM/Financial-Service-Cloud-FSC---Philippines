@@ -865,7 +865,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 50px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -874,7 +874,7 @@ section,
 
   section,
   .section {
-    scroll-margin-top: 76px;
+    scroll-margin-top: 70px;
   }
 }
 
@@ -1327,6 +1327,42 @@ img:hover {
     padding: 20px;
   }
 }
+
+
+/* Partner Logos Responsive Styling */
+.partner-logo {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.partner-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Optimization */
+@media (max-width: 576px) {
+  .partner-logo {
+    max-height: 55px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .partner-logo {
+    max-height: 60px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .partner-logo {
+    max-height: 70px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Features Section
