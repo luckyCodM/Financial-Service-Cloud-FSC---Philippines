@@ -2058,22 +2058,6 @@ section strong {
     font-weight: 600;
 }
 
-/* Responsive Fixes */
-/* @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-
-    }
-
-    p {
-        font-size: 0.95rem;
-    }
-} */
-
 
 /* Circle container */
 .icon-circle {
