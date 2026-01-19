@@ -1390,7 +1390,7 @@ img:hover {
   font-size: 48px;
 }
 
-.features .nav-link h4 {
+.features .nav-link h3 {
   font-size: 18px;
   font-weight: 600;
   margin: 0;
@@ -1407,7 +1407,7 @@ img:hover {
   border-color: var(--accent-color);
 }
 
-.features .nav-link.active h4 {
+.features .nav-link.active h3 {
   color: var(--contrast-color);
 }
 
