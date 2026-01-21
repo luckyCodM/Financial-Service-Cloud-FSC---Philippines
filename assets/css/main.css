@@ -230,12 +230,12 @@ h6 {
   margin-right: 8px;
 }
 
-.header .logo h1 {
+/* .header .logo h1 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
   color: var(--heading-color);
-}
+} */
 
 .header .cta-btn,
 .header .cta-btn:focus {
@@ -911,7 +911,7 @@ section,
 .section-title h2 {
   color: var(--heading-color);
   margin: 0;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--heading-font);
@@ -1078,7 +1078,7 @@ section,
 --------------------------------------------------------------*/
 .about h3 {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
@@ -1602,7 +1602,7 @@ section,
   margin: 10px 0 5px 0;
 }
 
-.testimonials .testimonial-item h4 {
+.testimonials .testimonial-item h3 {
   font-size: 14px;
   margin: 0 0 15px 0;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
@@ -1760,6 +1760,7 @@ section,
   padding: 5px 12px;
   border-radius: 7px;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .howitworks__v1 .step-card {
@@ -1956,7 +1957,7 @@ section,
   font-weight: 700;
 }
 
-.service-details h4 {
+.service-details h3 {
   font-size: 20px;
   font-weight: 700;
 }
@@ -2032,7 +2033,7 @@ section,
 # Terms of Use Page Section
 --------------------------------------------------------------*/
 
-section {
+/* section {
     background: #ffffff;
 }
 
@@ -2056,7 +2057,7 @@ p {
 
 section strong {
     font-weight: 600;
-}
+} */
 
 
 /* Circle container */
