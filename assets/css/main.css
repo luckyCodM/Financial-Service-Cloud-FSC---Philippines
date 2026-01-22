@@ -766,6 +766,17 @@ h6 {
     transform: rotate(360deg);
   }
 } */
+ 
+/*--------------------------------------------------------------
+# Pure Counter
+--------------------------------------------------------------*/
+.counter-plus::after {
+  content: "+";
+  margin-left: 3px;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button
