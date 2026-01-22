@@ -36,28 +36,46 @@
   </style>
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.avif" rel="icon">
+  <link href="assets/img/apple-touch-icon.avif" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <!-- CRITICAL CSS (keep render-blocking) -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </noscript>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- NON-CRITICAL CSS (load asynchronously) -->
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for no-JS browsers -->
+  <noscript>
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </noscript>
 
   <!-- Main CSS File -->
-  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+  <link href="assets/css/main.css" rel="stylesheet">
   <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="preload" href="/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" as="font" type="font/woff2"
-    crossorigin>
+  <link rel="preload" as="image" href="/assets/img/page-title-bg.avif" fetchpriority="high">
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+
 </head>
 
 <body class="service-details-page">
@@ -69,7 +87,7 @@
 
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade"
-      style="background-image: url(assets/img/page-title-bg.webp);">
+      style="background-image: url(assets/img/page-title-bg.avif);">
       <div class="container position-relative">
         <h1>Financial Services Cloud</h1>
         <nav class="breadcrumbs">
@@ -101,7 +119,7 @@
             </p>
             <p>However, many institutions are still dependent on the traditional system and struggle
               to deliver a seamless digital experience, resulting in the following challenges:</p>
-            <img src="assets/img/about.png" class="img-fluid rounded-4 mb-4" alt="">
+            <img src="assets/img/about.avif" class="img-fluid rounded-4 mb-4" alt="">
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
             <div class="content ps-0 ps-lg-5">
@@ -118,7 +136,7 @@
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                <img src="assets/img/about-2.avif" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=URPnzqT7mas" class="glightbox pulsating-play-btn"></a>
               </div>
             </div>
@@ -145,7 +163,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-1.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -162,7 +180,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.png" class="img-fluid" alt="">
+                <img src="assets/img/services-2.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -180,7 +198,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-3.png" class="img-fluid" alt="">
+                <img src="assets/img/services-3.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -197,7 +215,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-4.png" class="img-fluid" alt="">
+                <img src="assets/img/services-4.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -214,7 +232,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-5.png" class="img-fluid" alt="">
+                <img src="assets/img/services-5.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -231,7 +249,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-6.png" class="img-fluid" alt="">
+                <img src="assets/img/services-6.avif" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -259,45 +277,59 @@
 
           <!-- Left Gradient Circle with Image -->
           <div class="col-lg-4 text-center mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="rounded-circle d-flex justify-content-center align-items-center shadow" style="
-               width: 260px; 
-               height: 260px; 
-               margin: auto;
-               background: linear-gradient(135deg, #1d9dd8, #ba543a);
-             ">
-              <img src="assets/img/Corporate-Business-Partner.png" class="img-fluid"
-                style="width: 100%; height: 68%; margin-top: 37%;" alt="Corporate Business Partner">
+            <div class="icon-circle rounded-circle d-flex justify-content-center align-items-center shadow">
+              <img src="assets/img/Corporate-Business-Partner.avif" class="img-fluid icon-img"
+                alt="Corporate Business Partner">
             </div>
           </div>
+
 
           <!-- Right Section Content -->
           <div class="col-lg-8 ps-lg-5 text-center text-lg-start" data-aos="fade-up" data-aos-delay="400">
 
             <h2 class="fw-bold mb-2">
-              Your Partner in Smarter, <span class="text-purple fw-semibold"> Faster, Next-Gen Growth</span>
+              Your Partner in Smarter, <span class="text-purple fw-bold"> Faster, Next-Gen Growth</span>
             </h2>
 
-            <!-- Client Logos -->
-            <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-4 mb-4">
-              <img src="assets/img/Salesforce_Partner_Badge_Since_2021.png" class="img-fluid" style="height: 70px;"
-                alt="Since 2021">
-              <img src="assets/img/Salesforce-ride-partner.png" class="img-fluid" style="height: 70px;"
-                alt="Ride partner">
-              <img src="assets/img/Available_On_Appexchange_Badge.png" class="img-fluid" style="height: 70px;"
-                alt="Available On Appexchange Badge">
-              <img src="assets/img/Google-cloud.png" class="img-fluid" style="height: 70px;" alt="Google cloud">
-            </div>
+            <!-- LOGO PARTNERS SECTION -->
+            <section class="py-4">
+              <div class="container">
+                <div class="row justify-content-start align-items-center g-3">
+
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/Salesforce_Partner_Badge_Since_2021.avif" class="img-fluid partner-logo"
+                      alt="Salesforce Partner Since 2021">
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/Salesforce-ride-partner.avif" class="img-fluid partner-logo"
+                      alt="Salesforce Ride Partner">
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/Available_On_Appexchange_Badge.avif" class="img-fluid partner-logo"
+                      alt="Available on AppExchange">
+                  </div>
+
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 text-center">
+                    <img src="assets/img/Google-cloud.avif" class="img-fluid partner-logo" alt="Google Cloud Partner">
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
 
             <!-- Button -->
             <a href="#contact" class="btn btn-custom px-4 py-2 fw-semibold">
-              Contact Us
+              Get Custom Salesforce Solution
             </a>
 
           </div>
         </div>
 
         <!-- Bottom Gradient Line -->
-        <div class="mt-1" style="height: 4px; 
+        <div class="mt-3" style="height: 4px; 
                 width: 100%; 
                 border-radius: 4px; 
                 background: linear-gradient(90deg, #ba543a, #1d9dd8);">
@@ -372,7 +404,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-1.avif" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -408,7 +440,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-2.avif" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -443,7 +475,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-4.avif" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -473,7 +505,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+                <img src="assets/img/working-3.avif" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -487,7 +519,6 @@
 
     <!-- Services 2 Section -->
     <section id="services-2" class="services-2 section light-background">
-
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <p>Smart Capabilities</p>
@@ -778,9 +809,9 @@
 
 
   <!-- Business Floating Badge -->
-  <section class="business-badge" data-aos="fade-up" data-aos-delay="400">
-    <a href="salesforce-ridge-consulting-partner.html" data-aos="fade-up" data-aos-delay="400">
-      <img src="assets/img/Ridge-Partner.png" alt="Consulting Services">
+  <section class="business-badge">
+    <a href="salesforce-ridge-consulting-partner.html" target="_blank" data-aos="fade-up" data-aos-delay="200">
+      <img src="assets/img/Ridge-Partner.avif" alt="Salesforce Ridge Consulting Partner" class="business-badge-img">
     </a>
   </section>
 
@@ -788,7 +819,7 @@
 
     <!-- WhatsApp / Business Contact Icon -->
     <a href="https://wa.me/9871717425" target="_blank" data-aos="fade-up" data-aos-delay="400">
-      <img src="assets/img/whatsup.svg" alt="Business Contact" class="contact-icon">
+      <img src="assets/img/whatsup.avif" alt="Business Contact" class="contact-icon">
     </a>
   </section>
 

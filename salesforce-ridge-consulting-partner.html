@@ -38,28 +38,46 @@
     </style>
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.avif" rel="icon">
+    <link href="assets/img/apple-touch-icon.avif" rel="apple-touch-icon">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
+    <!-- CRITICAL CSS (keep render-blocking) -->
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </noscript>
+
+
+  <!-- NON-CRITICAL CSS (load asynchronously) -->
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <!-- Fallback for no-JS browsers -->
+  <noscript>
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </noscript>
 
-    <!-- Main CSS File -->
-    <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
-    <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
-    <link rel="preload" href="/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" as="font" type="font/woff2"
-        crossorigin>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" as="image" href="/assets/img/page-title-bg.avif" fetchpriority="high">
+  <link rel="preload" href="assets/vendor/bootstrap/css/bootstrap.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" as="style"
+    onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/aos/aos.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/glightbox/css/glightbox.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/vendor/swiper/swiper-bundle.min.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="assets/css/main.css" as="style" onload="this.rel='stylesheet'">
 
 
 </head>
@@ -91,7 +109,7 @@
             <div class="row justify-content-center">
                 <div class="col-12 px-3 px-md-4 px-lg-5">
 
-                    <h1 class="text-center mb-5 fw-bold">A New Milestone in our Salesforce Journey</h1>
+                    <h1 class="text-center mb-5 fw-bold fs-2">A New Milestone in our Salesforce Journey</h1>
                     <p>
                         We are excited to announce that CodM Software has officially become the Salesforce Ridge
                         Consulting Partner in 2025. It’s a major achievement for us, as it reflects our continuous
@@ -105,7 +123,7 @@
                         reliable, and innovative Salesforce partners.</p>
 
                     <!-- Purpose -->
-                    <h2 class="fw-bold mt-4">Understanding the Salesforce Partner Tiers</h2>
+                    <h2 class="fw-bold mt-3 fs-3">Understanding the Salesforce Partner Tiers</h2>
                     <p>
                         Salesforce evaluates and recognizes its partners based on their performance, certifications,
                         innovation and client success. These tiers represent a partner’s growth, expertise and impact
@@ -137,7 +155,7 @@
                     </p>
 
                     <!-- Scope -->
-                    <h2 class="fw-bold mt-4">Our Journey to Becoming the Ridge Consulting Partner</h2>
+                    <h2 class="fw-bold fs-3 mt-3">Our Journey to Becoming the Ridge Consulting Partner</h2>
                     <p>
                         CodM Software was established in 2021 with a vision to help businesses use Salesforce to grow
                         smarter and work more efficiently. Started with a passionate team of Salesforce professionals,
@@ -150,7 +168,7 @@
                     <p>The recognition as a Salesforce Ridge Consulting Partner, along with our presence on Salesforce
                         AppExchange, represents a new chapter in CodM Software’s credibility and global visibility.</p>
 
-                    <h3 class="fw-bold">How This Partnership Benefits Our Clients</h3>
+                    <h3 class="fw-bold mt-3 fs-3">How This Partnership Benefits Our Clients</h3>
                     <p>As a certified Salesforce Ridge Consulting Partner and an AppExchange-listed company, CodM
                         Software offers high-quality and verified Salesforce services. These milestones bring even more
                         value, trust and confidence for our clients.</p>
@@ -180,7 +198,7 @@
                     <p>These recognitions validate our dedication to delivering Salesforce solutions that are secure,
                         scalable, and business-ready.</p>
 
-                    <h3 class="fw-bold mt-3">How We Help You with Salesforce: Our Salesforce Expertise</h3>
+                    <h3 class="fw-bold mt-3 fs-4">How We Help You with Salesforce: Our Salesforce Expertise</h3>
                     <p>We provide end-to-end Salesforce services from consultation to implementation, integration, and
                         post-deployment support. Our expertise covers a wide range of Salesforce solutions, including
                         but not limited to:</p>
@@ -197,7 +215,7 @@
                     <p>Whether you’re starting your Salesforce journey or expanding an existing setup, we provide the
                         technical depth and strategic guidance to help you succeed.</p>
 
-                    <h3 class="fw-bold mt-3">Our Commitment to Client Success</h3>
+                    <h3 class="fw-bold mt-3 fs-4">Our Commitment to Client Success</h3>
                     <p>Every milestone we achieve, from Salesforce certifications to Ridge partnership and AppExchange
                         listing, everything is rooted in our focus on one thing: client success.</p>
                     <p>Our approach is simple:</p>
@@ -208,7 +226,7 @@
                         <li><b>Deliver value:- </b>We measure success through your satisfaction and growth.</li>
                     </ul>
 
-                    <h3 class="fw-bold mt-3">Looking Ahead: Beyond Ridge Consulting Partner</h3>
+                    <h3 class="fw-bold mt-3 fs-4">Looking Ahead: Beyond Ridge Consulting Partner</h3>
                     <p>Becoming a Salesforce Ridge Consulting Partner and joining the Salesforce AppExchange are proud
                         achievements, but they’re just the beginning of our bigger journey.</p>
                     <p>Our next goal is to reach the Crest and Summit Partner tiers, expand our global reach, and
@@ -217,7 +235,7 @@
                         our clients lead with confidence in a rapidly changing digital world.</p>
 
                     <!-- Contact -->
-                    <h2 class="fw-bold mt-5">Contact Information</h2>
+                    <h2 class="fw-bold mt-5 fs-3">Contact Information</h2>
                     <p>For Salesforce Ridge Partner concerns:</p>
                     <p><strong>Codm Software Private Limited</strong></p>
                     <p>Email: <a href="mailto:sales@codmsoftware.com">sales@codmsoftware.com</a></p>
@@ -234,16 +252,17 @@
     <div id="footer-placeholder"></div>
 
     <!-- Business Floating Badge -->
-    <section class="business-badge" data-aos="fade-up" data-aos-delay="400">
-        <a href="salesforce-ridge-consulting-partner.html" data-aos="fade-up" data-aos-delay="400">
-            <img src="assets/img/Ridge-Partner.png" alt="Consulting Services">
+    <section class="business-badge">
+        <a href="salesforce-ridge-consulting-partner.html" target="_blank" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/Ridge-Partner.avif" alt="Salesforce Ridge Consulting Partner"
+                class="business-badge-img">
         </a>
     </section>
 
     <section class="floating-buttons">
         <!-- WhatsApp / Business Contact Icon -->
         <a href="https://wa.me/9871717425" target="_blank" data-aos="fade-up" data-aos-delay="400">
-            <img src="assets/img/whatsup.svg" alt="Business Contact" class="contact-icon">
+            <img src="assets/img/whatsup.avif" alt="Business Contact" class="contact-icon">
         </a>
     </section>
 
