@@ -234,27 +234,27 @@
   2021: {
     title: "The Beginning",
     text: "CodM Software was founded by Anjali Kumari and began operations in 2021 with a vision to drive innovation and deliver tailored solutions that make an impact in the Salesforce ecosystem.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+    image: "assets/img/beginning.avif"
   },
   2022: {
     title: "Becoming a Salesforce Consultant",
     text: "With continuous dedication to our work and a commitment to learning, growth and expertise, CodM Software evolved into a Salesforce Consulting Partner within a year of starting its operations.",
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+    image: "assets/img/consulting_partner.avif"
   },
   2024: {
     title: "Expanding the Team",
     text: "By 2024, our team had grown to 20+ skilled and certified professionals, strengthening our capabilities to deliver high-quality Salesforce solutions to our global clients.",
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998"
+    image: "assets/img/team_growth.avif"
   },
   2025: {
     title: "Recognized Growth and Global Presence",
     text: "In 2025, CodM Software achieved another milestone of becoming a Salesforce Ridge Partner and expanded its presence on the Salesforce AppExchange, marking a new chapter of innovation and credibility.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+    image: "assets/img/app_exchange.avif"
   },
   2026: {
     title: "Looking Ahead",
     text: "As we look to the future, CodM Software remains committed to excellence, innovation, and delivering exceptional value to our clients worldwide, continuing our journey of growth and success in the Salesforce ecosystem.",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+    image: "assets/img/looking_ahead.avif"
   }
 };
 
