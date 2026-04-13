@@ -1553,6 +1553,100 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Industry Features Section
+--------------------------------------------------------------*/
+.industry-features .nav-tabs {
+  border: 0;
+}
+
+.industry-features .nav-link {
+  background-color: var(--surface-color);
+  color: var(--heading-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  padding: 15px 20px;
+  transition: 0.3s;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+}
+
+.industry-features .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.industry-features .nav-link h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.industry-features .nav-link:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.industry-features .nav-link.active {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--accent-color);
+}
+
+.industry-features .nav-link.active h3 {
+  color: var(--contrast-color);
+}
+
+@media (max-width: 768px) {
+  .industry-features .nav-link i {
+    padding: 0;
+    line-height: 1;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 575px) {
+  .industry-features .nav-link {
+    padding: 15px;
+  }
+
+  .industry-features .nav-link i {
+    font-size: 24px;
+  }
+}
+
+.industry-features .tab-content {
+  margin-top: 30px;
+}
+
+.industry-features .tab-pane h3 {
+  color: var(--heading-color);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.industry-features .tab-pane ul {
+  list-style: none;
+  padding: 0;
+}
+
+.industry-features .tab-pane ul li {
+  padding-bottom: 10px;
+}
+
+.industry-features .tab-pane ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: var(--accent-color);
+}
+
+.industry-features .tab-pane p:last-child {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials {
