@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://philippines.codmsoftware.com/sitemap.xml
